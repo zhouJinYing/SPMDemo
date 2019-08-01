@@ -10,7 +10,6 @@ let package = Package(
         .library(
             name: "SPMDemo",
             targets: ["SPMDemo"]),
-        
         .library(
             name: "SPMDemoOC",
             targets: ["SPMDemoOC"]),
@@ -24,7 +23,8 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "SPMDemo",
-            dependencies: [],
+            dependencies: ["SPMDemoOC"],
+            path: ".",
             sources: ["Sources/SPMDemo"]),
         .target(
             name: "SPMDemoOC",
