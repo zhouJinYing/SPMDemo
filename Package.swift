@@ -10,6 +10,10 @@ let package = Package(
         .library(
             name: "SPMDemo",
             targets: ["SPMDemo"]),
+        
+        .library(
+            name: "SPMDemoOC",
+            targets: ["SPMDemoOC"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
