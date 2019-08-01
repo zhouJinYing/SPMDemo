@@ -5,8 +5,8 @@ struct SPMDemo {
 }
 
 
-struct MyRobot {
-    static func Cooking() {
+public struct MyRobot {
+    public static func Cooking() {
         print("I am Cooking !!!!")
         TestOC.test()
     }
